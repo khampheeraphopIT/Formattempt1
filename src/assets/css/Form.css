@@ -1,0 +1,94 @@
+/* กำหนดให้ body ไม่มี padding หรือ margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-nav {
+    width: 100%;
+  }
+  
+  .nav-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-name .title {
+    margin: 1rem;
+    margin-top: 11px;
+  }
+  
+  .nav-name .title input {
+    margin-left: 1px;
+    border: none;
+    font-size: 22px;
+    width: auto;
+    color: #3c3a3a;
+  }
+  
+  .nav-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* ทำให้ navbar อยู่คงที่ที่ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* ให้พื้นหลังเป็นสีขาวเพื่อไม่ให้ทับข้อความ */
+    z-index: 200; /* ให้ navbar อยู่เหนือทุกอย่าง */
+  }
+  
+  .nav-bar .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    margin-right: 2rem;
+    list-style: none;
+    margin-top: 5px;
+  }
+  
+  .nav-menu .menu-icon {
+    color: #959292;
+  }
+  
+  .main-nav .container .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding-top: 70px; /* เพิ่ม padding-top เพื่อไม่ให้ content ซ้อนกับ navbar */
+  }
+  
+  .section .tab {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* ทุก property ใช้เวลา 3วิ ในการเปลี่ยนแปลง */
+  }
+  
+  .section .tab.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #7A1CAC;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px; /* ความหนาของเส้นใต้ */
+  }
+  
+  /* เนื้อหาหลักของฟอร์ม */
+  .form {
+        min-height: 100vh; /* เพื่อไม่ให้ content เกินจากหน้าจอ */
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+        flex-grow: 1;
+    }
+  
+  .form-container {
+    margin: 2rem;
+  }
+  

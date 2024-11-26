@@ -1,0 +1,100 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%); /* เริ่มต้น Sidebar ซ่อนอยู่ */
+    transition: all 0.3s ease;
+    z-index: 100; /* ให้ Sidebar อยู่ใต้ Navbar */
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* เมื่อเปิด Sidebar จะเลื่อนเข้ามา */
+  }
+  
+  .sidebar-close {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    width: 50px;
+    height: 100px;
+  }
+  
+  /* เพิ่มสไตล์ที่ใช้ใน Sidebar */
+  .sidebar-title {
+    text-align: left;
+    padding-left: 1rem ;
+    color: #333;
+    margin-top: 120px;
+  }
+
+  .color {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  #hex-color {
+    padding: 5px;
+  }
+
+  #pl-color {
+    width: 80px;
+    height: 30px;
+    margin-left: 50px;
+  }
+  
+  .sidebar ul {
+    padding-left: 20px;
+  }
+  
+  .sidebar ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a,
+  .sidebar ul li button {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover,
+  .sidebar ul li button:hover {
+    background-color: #7A1CAC;
+    color: #fff;
+  }
+  
+  .sidebar ul li button {
+    font-weight: bold;
+  }
+  
+  .sidebar ul li .btn {
+    background: #7A1CAC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .sidebar ul li .btn:hover {
+    background-color: #5c0e89;
+  }
+  
